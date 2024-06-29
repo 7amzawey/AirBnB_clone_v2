@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 """
     BaseModel for creating every single attributes
     that will be inherited for all objects
 """
-
-=======
 """This module defines a base class for all models in our hbnb clone"""
->>>>>>> 75f750d162fa65b9732f98db1d57094e6ec41528
 import uuid
 from datetime import datetime
 from sqlalchemy.orm import sessionmaker
