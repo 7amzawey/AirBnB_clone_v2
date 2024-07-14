@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # set up my web servers for the deployment of web_static 
 if ! [ -x "$(command -v nginx)" ]; then
     sudo apt-get update
@@ -17,7 +17,7 @@ echo "<html>
 
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 
-sudo chown -R ubuntu:ubuntu /data
+sudo chown -R www-data:www-data /data
 
 sudo sed -i '/^\s*server_name _;/a \\n\tlocation /hbnb_static {\n\t\talias /data/web_static/current/;\n\t}\n' /etc/nginx/sites-available/default
 
