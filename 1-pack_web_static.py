@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" this module is for a fabric script that generates a .tgz
-archive from the contents of the web_static folder"""
 from fabric import task
 from datetime import datetime
 import os
+""" this module is for a fabric script that generates a .tgz
+archive from the contents of the web_static folder"""
 
 
 @task
