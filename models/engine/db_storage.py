@@ -73,4 +73,4 @@ class DBStorage:
             print(f"Error occurred during reload: {e}")
 
     def close(self):
-        self.__session.close()
+        self.__session.remove()

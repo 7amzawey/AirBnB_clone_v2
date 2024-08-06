@@ -80,3 +80,7 @@ class FileStorage:
             pass
         except KeyboardInterrupt:
             pass
+
+    def close(self):
+        """method on the private sessoin attribute"""
+        self.reload()
