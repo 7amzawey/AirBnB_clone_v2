@@ -4,13 +4,13 @@ Start a Flask web appliction.
 """
 from flask import Flask
 
-
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     return "Hello HBNB!"
+
 
 @app.route('/airbnb-onepage/', strict_slashes=False)
 def hello_again():
